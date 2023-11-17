@@ -1,0 +1,31 @@
+document.write("<h1>컴퓨터와 가위 바위 보 맞추기");
+document.write("<br><br>");
+
+let game = prompt("가위, 바위, 보 중 선택하세요?", "가위");
+let gameNum;
+switch(game) {
+    case "가위" :
+        gameNum = 1;
+        break;
+    case "바위":
+        gameNum = 2;
+        break;
+    case "보" :
+        gameNum = 3;
+        break;
+    default : 
+        alert("잘못 작성했습니다.");
+        location.reload();
+}
+
+let com = Math.ceil(Math.random()*3);
+
+document.write(`<img src = "./image/${com}.jpg">`);
+document.write("<br><br>");
+
+if(gameNum === com ) {
+    document.write("정답입니다!");
+}
+else{
+    document.write("틀렸습니다. 다시 시도해보세요 </h1>");
+}
