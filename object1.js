@@ -47,6 +47,8 @@ document.write("<br>");
 let today1 = new Date();
 let nowYear = today1.getFullYear();
 
+document.write(today);
+
 let theDate1 = new Date(nowYear, 11, 15);
 let diffDate = theDate1.getTime() - today1.getTime();
 
