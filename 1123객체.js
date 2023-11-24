@@ -76,3 +76,14 @@ console.log(yellowArr);
 
 yellowArr.unshift(data1); //data1에 저장된 데이터를 yellowArr 배열의 가장 앞쪽 인덱스에 저장
 console.log(greenArr);
+
+document.write("<br><hr><br>");
+
+
+//map() 예제
+let numA = [ 2, 3, 4, 5, 6];
+
+numA = numA.map(function(element) {
+    return element * 3;
+});
+document.write(numA,"<br>");
