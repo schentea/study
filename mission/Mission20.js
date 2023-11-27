@@ -5,7 +5,7 @@ for(let i = 0; i<= myString.length; i++){
     if(myString.charAt([i]) === ","){
         break;
     }
-    document.write(myString.charAt([i]), "<br>");
+    document.write(myString.charAt([i]).toUpperCase(), "<br>");
 }
 document.write("<br><hr><br>")
 
