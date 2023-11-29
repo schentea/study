@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id ="second">0</div>
+    <div class ="second2">0</div>
+    <div id ="second3">0</div>
+    <script>
+        let addNum = 0;
+        const second1 = document.querySelector("#second")
+        setInterval(function(){
+            second1.innerHTML = addNum++;
+        },2000)
+        const second2 = document.querySelector(".second2")
+        const second3 = document.getElementById("second3")
+        //<div id ="second">0</div>가 변수에 저장
+        console.log(second1);
+        console.log(second2);
+        console.log(second3);
+    </script>
+</body>
+</html>

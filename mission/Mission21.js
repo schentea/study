@@ -18,10 +18,11 @@ document.write(fruit,"<br>");
 for(let i = 0; i <= fruit.length; i++){
     if(fruit[i] === "바나나"){
         for(let j = 0; j <= fruit.length; j++){
-            document.write(fruit[j], " ");
+            document.write(fruit[j]);
             if(fruit[j] === "포도"){
                 break;    
             }
+            document.write(" ");
         }
     }
 }
